@@ -1,0 +1,383 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: radial-gradient(
+    circle at center top,
+    rgb(10, 28, 58) 0px,
+    rgb(5, 17, 34) 900px,
+    rgb(5, 17, 34)
+  );
+  color: white;
+}
+
+header .navbar nav li img {
+  width: 130px;
+  margin-left: 100px;
+  margin-bottom: 15px;
+}
+
+header {
+  height: 800px;
+  background-image: url("../image/avatar.PNG");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  position: relative;
+  background: radial-gradient(
+    circle at center top,
+    rgb(10, 28, 58) 0px,
+    rgb(5, 17, 34) 900px,
+    rgb(5, 17, 34)
+  );
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 150px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.user-actions {
+  display: flex;
+  align-items: center;
+}
+
+.user-actions ul {
+  list-style-type: none;
+  display: flex;
+  margin-bottom: 0;
+}
+
+.user-actions li {
+  margin-right: 20px;
+  margin-bottom: 40px;
+}
+.user-actions li a {
+  text-decoration: none;
+  color: white;
+}
+
+.search-icon {
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+.search-icon img {
+  margin-right: 100px;
+  width: 20px;
+}
+
+.avatar-section {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin-top: 50px; /* Espacio desde la parte superior */
+}
+.avatar-section h1 {
+  position: absolute;
+  left: 20%;
+  transform: translateX(-50%);
+  padding-right: 200px;
+  padding-top: 50px;
+  padding-left: 70px;
+  padding-bottom: 50px;
+}
+
+.blue-border-button {
+  border: 2px solid #3498db;
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 1240px;
+  margin-top: 180px; /* Espacio desde el título hacia el botón */
+}
+
+.container {
+  text-align: center;
+  padding: 40px; /* Aumenta el espacio alrededor del contenido principal */
+}
+
+main {
+  margin-top: 40px;
+}
+
+main .container .titleTopPeliculas {
+  font-family: "Nunito Sans";
+  font-size: 30px;
+  padding: 16px;
+}
+
+.card {
+  position: relative;
+}
+
+.card h3 {
+  position: absolute;
+  top: 85%;
+  right: 15%;
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 200px;
+  margin: 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.PauseButton {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 50px;
+  height: 50px;
+  background-color: #0068c8;
+  clip-path: polygon(
+    -1px -1px,
+    -1px -10px,
+    calc(100% + 1px) -10px,
+    calc(100% + 1px) 0,
+    calc(100% + 1px) calc(100% - 15px),
+    calc(100% - 15px) calc(100% + 1px),
+    0 100%,
+    0 calc(100% - 4px)
+  );
+  background-position: top right, top right, bottom left, bottom left, top left;
+  background-repeat: no-repeat;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+.PauseButton .FilmIcon {
+  fill: #fff;
+  position: absolute !important;
+  color: #fff;
+  position: relative;
+
+  background-size: 100% 1px, 1px calc(100% - 10px), 1px 100%,
+    calc(100% - 10px) 1px, 100%;
+  background-color: #0068c8;
+  clip-path: polygon(
+    -1px -1px,
+    -1px -10px,
+    calc(100% + 1px) -10px,
+    calc(100% + 1px) 0,
+    calc(100% + 1px) calc(100% - 10px),
+    calc(100% - 10px) calc(100% + 1px),
+    0 100%,
+    0 calc(100% - 4px)
+  );
+  background-position: top right, top right, bottom left, bottom left, top left;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+  color: white;
+}
+
+.card img {
+  width: 100%;
+}
+
+.premium-salas {
+  color: white;
+  padding: 50px;
+  background: url("../image/moradoimage.PNG") center/cover no-repeat;
+}
+
+.premium-salas h3 {
+  font-size: 32px;
+}
+
+.premium-salas p {
+  font-size: 18px;
+  justify-content: left;
+  margin: 0 0 20px;
+  font-family: "Nunito Sans";
+}
+
+.premium-salas a {
+  display: inline-block;
+  margin-top: 20px;
+  color: #19aaff;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.contentsorteo {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.contentsorteo .header {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.contentsorteo .header .componentTitle {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.contentsorteo .header .componentTitle .componentTitleContent {
+  font-family: "NunitoSans", Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  letter-spacing: 1.3px;
+  line-height: 28px;
+  font-weight: 700;
+  position: relative;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: block;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.offersBody {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch; /* Asegura que todas las ofertas tengan la misma altura */
+}
+
+.offersPromos {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.imagecards {
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho disponible */
+}
+
+.offersImage {
+  width: 100%;
+  height: auto;
+}
+
+.offersBody .offersPromos {
+  flex-direction: column;
+  display: flex;
+  min-width: 250px;
+  flex: 1;
+  margin-bottom: 30px;
+  margin-right: 20px; /* Esto añadirá un espacio entre las ofertas */
+  position: relative;
+  background-color: #fff;
+  background-position: top right, top right, bottom left, bottom left, top left;
+  background-repeat: no-repeat;
+}
+
+.offersBody .offersPromos .imagecards img {
+  width: 100%;
+  aspect-ratio: 1/0.5;
+  object-fit: cover;
+  position: relative;
+}
+
+.contentCards {
+  color: #0a1c3a;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contentCards .cardBody {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.contentCards .title {
+  font-family: "NunitoSans", Helvetica, Arial, sans-serif;
+  font-size: 22px;
+  letter-spacing: 1.3px;
+  line-height: 28px;
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+
+.BodyText p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.contentCards .link {
+  color: #19aaff;
+  padding: 10px 0;
+}
+
+.link a {
+  font-family: "NunitoSans", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  line-height: 22px;
+  font-weight: 400;
+  transition: 0.35s all;
+  color: #19aaff;
+}
+.footerContain {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footerBox {
+  text-align: center;
+  max-width: 200px;
+}
+
+.boxTitle {
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.footerBox ul {
+  list-style: none;
+  margin-top: 30px;
+}
+
+.footerBox ul li {
+  margin: 10px 0;
+}
+footer .footer {
+  background: #0a1c3a;
+}
